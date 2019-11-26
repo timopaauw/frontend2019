@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: snow;
+    padding: 0 3em;
+}
+
+p {
+    color: black;
+}
+
+h1 {
+    color: black;
+}
+
+
+img {
+    width: 100%;
+
+}
+
+/* Container met teskt voor rechtsonder in de banner! */
+.tekstContainer {
+    position: relative;
+}
+
+
+.cmd {
+    display: flex;
+    position: absolute;
+    bottom: 110px;
+    right: 20px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+
+.tekstBlok {
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, .7);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 3vw;
+
+}
+
+.tekstContainerStudent {
+    position: relative;
+}
+
+.cmdStudent {
+    display: flex;
+    position: absolute;
+    text-align: left;
+    left: 70px;
+    bottom: 120px;
+
+
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.tekstBlokStudent {
+    display: flex;
+    position: absolute;
+    text-align: left;
+    left: 70px;
+    bottom: 100px;
+
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 3vw;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*header*/
+.logo {
+    width: 150px;
+}
+
+li:first-child {
+    margin-right: auto;
+}
+
+li {
+    padding: 10px;
+
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+/* tablet */
+@media all and (max-width: 800px) {
+    ul {
+        justify-content: space-around;
+        flex-direction: column;
+    }
+}
+
+/* mobiel */
+@media all and (max-width: 500px) {
+    ul {
+        flex-direction: column;
+    }
+}
+
+/*knoppen*/
+.buttonWit {
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 3px;
+    border-color: black;
+    border-width: 2px;
+    color: black;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.buttonZwart {
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+    border-radius: 5px;
+    border-color: black;
+    color: white;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.buttonGoldenDot {
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+    border-radius: 5px;
+    border-color: black;
+    color: white;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    display: flex;
+    position: absolute;
+    left: 70px;
+    bottom: 50px;
+}
