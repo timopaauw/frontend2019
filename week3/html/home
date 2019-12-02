@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+
+    <title>CMD AMSTERDAM</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="font">
+
+        <meta charset="UTF-8" name="viewport" content="width=device-width", inital-scale=1>
+</head>
+
+<body>
+    <header>
+
+
+
+        <nav>
+      <ul>
+                <li><a href="home.html"><img src="../image/logo.png" alt="logo" class="logo"></a></li>
+                <li><a href="#">CMD</a></li>
+                <li><a href="studentenwerk.html">Studentenwerk</a></li>
+                <li><a href="#">Samenwerken</a></li>
+                <li><a href="#">Battery</a></li>
+                <li><a href="#">Nieuws</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="tekstContainer">
+                <p>CMD Amsterdam</p>
+                <p>Opleiding voor digital interactive design</p>
+        </div>
+
+
+
+
+        <section>
+            <article>
+                <h3>Ontwerpen</h3>
+                <p class="intro">Wij zijn Communication and Multimedia Design (CMD). Wij zijn een HBO-ontwerpopleiding voor digital interactive design. Onze studenten ontwerpen en realiseren digitale interactieve oplossingen die optimaal aansluiten bij de behoeften van de gebruikers.</p>
+
+                <p>In de kern van de opleiding zit interaction design, visual design en techniek (met name frontend development). Onze vakdocenten hebben een goed netwerk en vertalen continu recente ontwikkelingen naar het gehele onderwijsprogramma. Afgestudeerde studenten zijn daarmee van grote waarde in het huidige werkveld. Daar zijn wij trots op!</p>
+
+                <button class="buttonZwart" type="button">
+                    Meer over CMD
+                </button>
+
+                <img src="../image/ontwerpen.jpg" alt="foto van iemand die tekent">
+
+
+            </article>
+
+            <article>
+                <h3>Studentenwerk</h3>
+                <p class="intro">Het werk van onze studenten varieert van websites tot webshops, en van fysieke producten met een NFC-chip tot interactieve datavisualisaties. En dan zijn we er vast nog een paar vergeten.</p>
+
+                <p>We hebben een mooie selectie van studentenwerk voor je gemaakt. Hierbij kun je ook kiezen tussen werk uit de vier studiejaren. Laat je verrassen en voel je vrij om er comments bij te plaatsen!</p>
+
+                <button class="buttonZwart" type="button">
+                    Bekijk studentenwerk
+                </button>
+
+                <img src="../image/studentenwerk.png" alt="studentenwerk">
+            </article>
+
+            <article>
+                <h3>Samenwerken</h3>
+                <p class="intro">Onze opleiding hecht grote waarde aan samenwerking. We kijken met interesse naar de ontwikkelingen in ons vakgebied en de samenleving en zoeken daar onderwerpen en partners uit. Daarnaast stellen wij onze kennis en kunde rond digital interactive design graag beschikbaar voor ons netwerk.</p>
+
+                <p>Dit alles doen we via stages, het werken aan projecten, gastcolleges, bedrijfsbezoeken, bijbaantjes, (betaalde) ontwerpklussen voor onze studenten en korte cursussen en masterclasses voor bedrijven.</p>
+
+                <button class="buttonWit" type="button">
+                    Samenwerken? Ja graag!
+                </button>
+
+                <img src="../image/samenwerken.jpg" alt="studenten die aan een tafel  samenwerken">
+
+            </article>
+
+            <article>
+                <h3>Cursussen en masterclasses</h3>
+                <p class="intro">Naast het opleiden van studenten delen wij onze kennis en expertise rond digital interactive design ook graag met iedereen die daar interesse in heeft. Vanuit CMD Battery geven onze docenten korte cursussen en masterclasses.</p>
+
+                <p>Uitgangspunt is onze eigen expertise. In een gesprek kunnen wij de cursus aan laten sluiten bij jouw eigen kennisbehoefte. Mocht je op basis van ons opleidingsprogramma interesse hebben in één of meerdere onderwerpen, dan komen we graag bij je langs.</p>
+
+                <button class="buttonZwart" type="button">
+                    Meer over battery
+                </button>
+
+                <img src="../image/cursus.jpg" alt="foto van jongen met een afbeelding van een batterij in zn handen in de stad">
+
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h4>Studeren bij CMD?</h4>
+
+                <button class="buttonZwart" type="button">
+                    Kom naar onze open dag!
+                </button>
+
+            </article>
+        </section>
+
+
+
+    </main>
+
+</body>
+
+</html>
