@@ -1,0 +1,637 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*single column layout*/
+body {
+    color: #fff;
+}
+
+/*major breakpoint 1*/
+@media (min-width: 30em) {
+    body {
+        color: #000;
+    }
+}
+
+k nav {
+    width: 100vw;
+    background-color: rgba(155, 155, 155);
+}
+
+.ingeklapt {
+    height: 50px;
+    overflow: hidden;
+    transition: all .3s ease-in;
+
+}
+
+.uitgeklapt {
+    height: 400px;
+    overflow: hidden;
+
+}
+
+.hamburgerMenu {
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+
+}
+
+.slotje {
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    right: 50px;
+
+}
+
+.containerMenu {
+    background-color: white;
+}
+
+
+ul {
+
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+header {
+    background-color: #828282;
+
+}
+
+p {
+    color: black;
+    margin: 0 20px;
+
+}
+
+.intro {
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: black;
+}
+
+h3 {
+    margin: 20px 20px 10px;
+}
+
+
+img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+
+
+
+}
+
+/* Container met teskt voor rechtsonder in de banner! */
+.tekstContainer {
+    height: 75vh;
+
+    position: relative;
+    background-image: url("../image/cmd.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.tekstContainer p:first-child {
+
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 3vw;
+    font-weight: bold;
+
+}
+
+
+.tekstContainer p:last-child {
+
+    position: absolute;
+    bottom: 75px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, .7);
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 3vw;
+    font-weight: lighter;
+
+
+}
+
+
+.tekstContainerStudent {
+    height: 50vw;
+    position: relative;
+    background-image: url("../image/studentenwerk.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.tekstContainerStudent p:first-child {
+
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 3vw;
+    font-weight: bold;
+
+}
+
+
+.tekstContainerStudent p:last-child {
+
+    position: absolute;
+    bottom: 75px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, .7);
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 3vw;
+    font-weight: lighter;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cmdStudent {
+    display: flex;
+    position: absolute;
+    text-align: left;
+    left: 70px;
+    bottom: 120px;
+
+
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.tekstBlokStudent {
+    display: flex;
+    position: absolute;
+    text-align: left;
+    left: 70px;
+    bottom: 100px;
+
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 3vw;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*header*/
+.logo {
+    width: 150px;
+    position: relative;
+    margin-top: 0;
+}
+
+li:first-child {
+    margin-right: auto;
+}
+
+li {
+    padding: 10px;
+
+}
+
+
+
+/*knoppen*/
+.buttonWit {
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 3px;
+    border-color: black;
+    border-width: 2px;
+    color: black;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+
+
+.buttonZwart {
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+    border-radius: 5px;
+    border-color: black;
+    color: white;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+
+.buttonZwart:hover {
+    background-color: white;
+    color: black;
+
+
+}
+
+.buttonZwart:active {
+    transform: rotate(5deg);
+}
+
+/*   background-color: rgba(0, 255, 0, 1);
+  transform: rotate(5deg);
+    font-size: 3em;
+  font-family: Comic Sans MS;
+  font-weight: bolder; */
+
+
+
+.buttonGoldenDot {
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+    border-radius: 5px;
+    border-color: black;
+    color: white;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    display: flex;
+    position: absolute;
+    left: 70px;
+    bottom: 50px;
+}
+
+
+/*OPEN DAG ONDERAAN PAGINA*/
+
+#geel {
+
+    background-color: #FDF057;
+
+
+}
+
+h4 {
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.buttonBodem {
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+    border-radius: 5px;
+    border-color: black;
+    color: white;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+figure {
+    padding: 5px;
+    display: table;
+}
+
+figure img {
+    display: block;
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+}
+
+
+
+
+
+footer {
+    background-color: #585858;
+    padding: 30px;
+}
+
+footer p {
+    color: white;
+    text-transform: uppercase;
+}
+
+
+/*OPEN DAG ONDERAAN PAGINA*/
+
+
+/*Terug naar boven knop*/
+/*Inspiratie gezocht bij... bron:
+https://www.w3schools.com/howto/howto_js_scroll_to_top.asp*/
+
+#top {
+    background: url(../image/top.png);
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: gray;
+    /* Set a background color */
+    padding: 20px;
+    /* Some padding */
+    border-radius: 3px;
+    /* Rounded corners */
+
+}
+
+/*Einde terug naar boven knop*/
+
+
+
+
+
+
+
+/* tablet */
+@media all and (min-width: 800px) {
+    ul {
+        justify-content: space-around;
+        flex-direction: column;
+
+    }
+
+    .hamburgerMenu {
+        display: none;
+    }
+
+    .slotje {
+        display: none;
+    }
+
+
+
+}
+
+/* groot */
+@media all and (min-width: 720px) {
+    ul {
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        background-color: white;
+
+    }
+
+
+
+    #ontwerpen {
+        border: solid 1px black;
+
+
+    }
+
+    #ontwerpen:first-child p {
+        width: 70%;
+        margin: 70px auto;
+        font-size: 17px;
+        line-height: 1.2;
+    }
+
+    #ontwerpen:first-child img {
+        float: left;
+        width: 600px;
+        padding: 5px;
+        margin-right: 20px;
+
+    }
+
+
+    #samenwerken p {
+        width: 70%;
+        margin: 70px auto;
+        font-size: 17px;
+        line-height: 1.2;
+    }
+
+    #samenwerken img {
+        float: right;
+        width: 600px;
+        padding: 5px;
+        margin-right: 20px;
+
+    }
+
+    #curMas p {
+        width: 70%;
+        margin: 70px auto;
+        font-size: 17px;
+        line-height: 1.2;
+    }
+
+    #curMas img {
+        float: left;
+        width: 600px;
+        padding: 5px;
+        margin-right: 20px;
+
+    }
+
+
+    #geel p {
+        width: 70%;
+        margin: 70px auto;
+        font-size: 17px;
+        line-height: 1.2;
+    }
+
+    #geel img {
+        float: right;
+        width: 600px;
+        padding: 5px;
+        margin-right: 20px;
+
+    }
+
+
+
+
+
+
+
+    .werk figcaption h2 {
+        text-align: center;
+    }
+
+    .werk figure {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        list-style: none;
+        flex-shrink: 1;
+        width: 400px;
+
+    }
+
+    .werk {
+        width: 75%;
+        margin: 100px auto;
+    }
+
+
+    /* met hulp van: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax */
+
+
+    .parallax {
+        /* The image used */
+        background-image: url("/image/cmd.png");
+        min-height: 600px;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+    .tekstContainer p:first-child {
+
+        position: absolute;
+        bottom: 150px;
+        right: 20px;
+        color: black;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 3vw;
+        font-weight: bold;
+
+    }
+
+
+    .tekstContainer p:last-child {
+
+        position: absolute;
+        bottom: 75px;
+        right: 20px;
+        background-color: rgba(255, 255, 255, .7);
+        color: black;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 3vw;
+        font-weight: lighter;
+
+
+    }
+
+    .tekstContainerStudent p:first-child {
+
+        position: absolute;
+        bottom: 200px;
+        left: 80px;
+        color: black;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 3vw;
+        font-weight: bold;
+
+    }
+
+
+    .tekstContainerStudent p:last-child {
+
+        position: absolute;
+        bottom: 125px;
+        right: 900px;
+        background-color: rgba(255, 255, 255, .7);
+        color: black;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 3vw;
+        font-weight: lighter;
+
+
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+section article:nth-of-type(2n) > p {}
+
+section article:nth-of-type(2n) > p:hover {}
