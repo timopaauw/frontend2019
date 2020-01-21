@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+
+    <title>CMD AMSTERDAM</title>
+
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="font">
+
+    <meta charset="UTF-8" name="viewport" content="width=device-width" , inital-scale=1>
+</head>
+
+<body>
+
+
+    <!-- start header -->
+    <header>
+        <nav class="ingeklapt">
+            <ul>
+                <div class="containerMenu">
+                    <li><a href="home.html"><img src="../image/logo.png" alt="logo" class="logo"></a></li>
+                    <li><img src="../image/slot.png" alt="slotje" class="slotje"></li>
+                    <li><img src="../image/menu.png" alt="hamburger" class="hamburgerMenu"></li> <!-- Hamburger Menu -->
+                </div>
+                <li><a href="home.html">CMD</a></li>
+                <li><a href="studentenwerk.html" id="studentenwerk">Studentenwerk</a></li>
+                <li><a href="#">Samenwerken</a></li>
+                <li><a href="#">Battery</a></li>
+                <li><a href="#">Nieuws</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- einde header -->
+
+    <main>
+
+        <!-- terug naar boven knop -->
+
+        <button onclick="topFunction()" id="top"></button>
+
+        <!-- containter om de tekst te alignen -->
+
+        <div class="tekstContainer">
+            <p>CMD Amsterdam</p>
+            <p>Opleiding voor digital interactive design</p>
+        </div>
+
+
+        <!-- eerste article: ontwerpen -->
+
+        <section>
+            <article id="ontwerpen">
+                <h3>Ontwerpen</h3>
+                <p class="intro"><img src="../image/ontwerpen.jpg" alt="foto van iemand die tekent">Wij zijn Communication and Multimedia Design (CMD). Wij zijn een HBO-ontwerpopleiding voor digital interactive design. Onze studenten ontwerpen en realiseren digitale interactieve oplossingen die optimaal aansluiten bij de behoeften van de gebruikers.</p>
+
+                <p>In de kern van de opleiding zit interaction design, visual design en techniek (met name frontend development). Onze vakdocenten hebben een goed netwerk en vertalen continu recente ontwikkelingen naar het gehele onderwijsprogramma. Afgestudeerde studenten zijn daarmee van grote waarde in het huidige werkveld. Daar zijn wij trots op!</p>
+
+                <button class="buttonZwart" type="button">
+                    Meer over CMD
+                </button>
+
+            </article>
+
+            <!-- alle artikelen met een gele achtergrond heten 'geel' -->
+
+            <article id="geel">
+                <h3> Studentenwerk </h3>
+                <p class="intro"><img src="../image/studentenwerk.png" alt="studentenwerk">Het werk van onze studenten varieert van websites tot webshops, en van fysieke producten met een NFC-chip tot interactieve datavisualisaties. En dan zijn we er vast nog een paar vergeten.</p>
+
+                <p>We hebben een mooie selectie van studentenwerk voor je gemaakt. Hierbij kun je ook kiezen tussen werk uit de vier studiejaren. Laat je verrassen en voel je vrij om er comments bij te plaatsen!</p>
+
+                <button class="buttonZwart" type="button">
+                    Bekijk studentenwerk
+                </button>
+
+
+            </article>
+
+            <!-- artikel samenwerken -->
+
+            <article id="samenwerken">
+                <h3>Samenwerken</h3>
+                <p class="intro"><img src="../image/samenwerken.jpg" alt="studenten die aan een tafel  samenwerken">Onze opleiding hecht grote waarde aan samenwerking. We kijken met interesse naar de ontwikkelingen in ons vakgebied en de samenleving en zoeken daar onderwerpen en partners uit. Daarnaast stellen wij onze kennis en kunde rond digital interactive design graag beschikbaar voor ons netwerk.</p>
+
+                <p>Dit alles doen we via stages, het werken aan projecten, gastcolleges, bedrijfsbezoeken, bijbaantjes, (betaalde) ontwerpklussen voor onze studenten en korte cursussen en masterclasses voor bedrijven.</p>
+
+                <button class="buttonWit" type="button">
+                    Samenwerken? Ja graag!
+                </button>
+
+
+
+            </article>
+
+            <!-- artikel cusussen en masterclasses -->
+
+            <article id="curMas">
+                <h3>Cursussen en masterclasses</h3>
+                <p class="intro"><img src="../image/cursus.jpg" alt="foto van jongen met een afbeelding van een batterij in zn handen in de stad">
+                    Naast het opleiden van studenten delen wij onze kennis en expertise rond digital interactive design ook graag met iedereen die daar interesse in heeft. Vanuit CMD Battery geven onze docenten korte cursussen en masterclasses.</p>
+
+                <p>Uitgangspunt is onze eigen expertise. In een gesprek kunnen wij de cursus aan laten sluiten bij jouw eigen kennisbehoefte. Mocht je op basis van ons opleidingsprogramma interesse hebben in één of meerdere onderwerpen, dan komen we graag bij je langs.</p>
+
+                <button class="buttonZwart" type="button">
+                    Meer over battery
+                </button>
+
+
+            </article>
+        </section>
+
+        <section>
+            <article id="geel">
+                <h4>Studeren bij CMD?</h4>
+
+                <!-- speciale button voor de open dag -->
+
+                <button class="buttonBodem" type="button">
+                    Kom naar onze open dag!
+                </button>
+
+            </article>
+        </section>
+
+        <!-- footer met copyrightlogo  -->
+
+        <footer>
+            <p>&copy; CMD AMSTERDAM | Timo Paauw 2020</p>
+        </footer>
+
+    </main>
+
+    <!-- linken naar het script  -->
+
+    <script src="/script/script.js"></script>
+
+
+</body>
+
+</html>
