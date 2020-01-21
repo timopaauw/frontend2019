@@ -1,22 +1,35 @@
-console.log("Faka strijders")
 
+
+//even checken of het script werkt
+console.log("Ja hallo")
+
+
+
+//hamburgermenu
+//selecteer het hamburgermenu
 var hamburgerButton = document.querySelector(".hamburgerMenu");
+
+//selecteer het menu
 var menu = document.getElementsByTagName("nav")[0];
 
-
-
+//spreek de class geklapt aan
 function uitklappen() {
     menu.classList.toggle("uitgeklapt");
 }
 
+//bij een klik zal uitklappen getriggered worden
 hamburgerButton.addEventListener("click", uitklappen);
 
+//einde hamburgermenu
 
 
-//Get the button:
+//hieronder is het javascript voor de back to top knop de vinden
+
+//haal de knop ff op
 mybutton = document.getElementById("top");
 
-// When the user scrolls down 20px from the top of the document, show the button
+
+// de gebruiker scroolt 20px naar beneden en de knop verschijnt en anders wordt er 'none' weergegeven
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -27,7 +40,7 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// wanneer er geklikt wordt zal er naar boven gescrollt worden
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
