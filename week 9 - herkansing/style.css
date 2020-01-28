@@ -160,7 +160,7 @@ img {
 .tekstContainer h1:last-child {
 
     position: absolute;
-    bottom: 75px;
+    bottom: 68px;
     right: 20px;
     background-color: rgba(255, 255, 255, .7);
     color: black;
@@ -198,7 +198,7 @@ img {
 .tekstContainerStudent h1:last-child {
 
     position: absolute;
-    bottom: 75px;
+    bottom: 68px;
     right: 20px;
     background-color: rgba(255, 255, 255, .7);
     color: black;
@@ -482,7 +482,7 @@ button:active {
 
 
 /* wat veranderingen aan het menu bij tabletformaat */
-@media all and (min-width: 800px) {
+@media all and (min-width: 1000px) {
     ul {
         justify-content: space-around;
         flex-direction: column;
@@ -499,7 +499,7 @@ button:active {
 
 
 /* hieronder is alles te vinden wat er zal veranderen als het scherm groot wordt */
-@media all and (min-width: 800px) {
+@media all and (min-width: 1000px) {
     ul {
         flex-flow: row wrap;
         justify-content: flex-end;
@@ -643,6 +643,10 @@ button:active {
         margin-bottom: 20px;
         flex: 1;
     }
+
+
+
+
 
     .studentenwerk {
         background-color: #FDF254;
