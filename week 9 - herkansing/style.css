@@ -1,0 +1,686 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*single column layout*/
+body {
+    color: #fff;
+}
+
+/*major breakpoint 1*/
+@media (min-width: 30em) {
+    body {
+        color: #000;
+
+    }
+
+    article {
+        margin: 0 20px;
+    }
+}
+
+
+/*navigatie en hamburgermenu */
+
+k nav {
+    width: 100vw;
+    background-color: rgba(155, 155, 155);
+}
+
+nav {
+    height: 50px;
+    overflow: hidden;
+    transition: all .3s ease-in;
+}
+
+.uitgeklapt {
+    height: 400px;
+    overflow: hidden;
+}
+
+.hamburgerMenu {
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.slotje {
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    right: 50px;
+}
+
+.containerMenu {
+    background-color: white;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    background-color: #828282;
+
+}
+
+
+
+
+
+/* einde navigatie en hamburgermenu */
+
+/* normale tekst*/
+p {
+    color: black;
+    margin-bottom: 20px;
+}
+
+
+/*hieronder wordt het introtekstje dunner gemaakt dan het andere stukje tekst dmv nth of type op de p*/
+section article p:first-of-type {
+    color: black;
+    font-weight: lighter;
+    line-height: 25px;
+}
+
+section p:nth-of-type(2) {
+    color: black;
+}
+
+/*tekst bovenaan de pagina*/
+
+h1 {
+    color: black;
+}
+
+.werk figcaption h2 {
+    text-align: center;
+}
+
+h3 {
+    margin: 20px 20px 10px;
+}
+
+h4 {
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+}
+
+
+
+
+
+img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Container met text-emphasis: ;t voor rechtsonder in de banner! */
+.tekstContainer {
+    height: 75vh;
+    position: relative;
+    background-image: url("../image/cmd.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* bovenste tekst moet anders zijn dan de tekst eronder. Dit los ik op dmv fist- en last-child */
+
+.tekstContainer h1:first-child {
+
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.tekstContainer h1:last-child {
+
+    position: absolute;
+    bottom: 75px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, .7);
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 3vw;
+    font-weight: lighter;
+}
+
+
+.tekstContainerStudent {
+    height: 75vh;
+    position: relative;
+    background-image: url("../image/studentenwerk.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.tekstContainerStudent h1:first-child {
+
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 3vw;
+    font-weight: bold;
+
+}
+
+.tekstContainerStudent h1:last-child {
+
+    position: absolute;
+    bottom: 75px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, .7);
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 3vw;
+    font-weight: lighter;
+}
+
+
+
+.tekstBlokStudent {
+    display: flex;
+    position: absolute;
+    text-align: left;
+    left: 70px;
+    bottom: 100px;
+
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 3vw;
+}
+
+/* alle tekst in de header + uitlijning */
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*header*/
+.logo {
+    width: 150px;
+    position: relative;
+    margin-top: 0;
+}
+
+li:first-child {
+    margin-right: auto;
+}
+
+li {
+    padding: 10px;
+}
+
+
+
+figure {
+    padding: 5px;
+    display: table;
+}
+
+figure img {
+    display: block;
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+}
+
+
+
+
+
+footer {
+    background-color: #585858;
+    padding: 30px;
+}
+
+footer p {
+    color: white;
+    text-transform: uppercase;
+}
+
+
+/*OPEN DAG ONDERAAN PAGINA*/
+
+
+
+
+/*Terug naar boven knop*/
+/*Inspiratie gezocht bij... bron:
+https://www.w3schools.com/howto/howto_js_scroll_to_top.asp*/
+
+.naarBoven {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #828282;
+    color: white;
+    cursor: pointer;
+    border-radius: 2px;
+    display: none;
+
+}
+
+.naarBoven:hover {
+    background: cornflowerblue;
+    text-decoration: none;
+}
+
+.naarBovenFade {
+    display: block;
+}
+
+/*Einde terug naar boven knop*/
+
+
+
+/* styling voor het formulier */
+
+section > h2 {
+    text-align: center;
+    margin: 50px 0;
+    font-weight: bolder;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+legend{
+    font-size: 21px;
+    font-weight: bold;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0px auto;
+    width: 400px;
+    text-align: left;
+    padding: 30px;
+}
+
+
+fieldset > label {
+    margin-top: 1em;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+input[type=submit] {
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 3px;
+    border-color: black;
+    border-width: 2px;
+    color: black;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+}
+
+input[type=submit]:hover {
+    background-color: black;
+    color: white;
+}
+
+
+fieldset > input {
+    margin-top: .5em;
+    width: 15em;
+    font-size: 18px;
+    transition: all .2s ease-in;
+}
+
+fieldset > input:hover {
+    outline: 3 solid black;
+
+
+}
+
+fieldset > input:focus {
+    border: 2px solid green;
+    width: 18em;
+
+}
+
+fieldset > input:hover {
+    outline: 5px solid #FDF254
+}
+
+fieldset:invalid {
+    border: 3px solid red;
+    border-radius: 20px;
+}
+
+fieldset:valid {
+    border: 3px solid green;
+    border-radius: 20px;
+}
+
+
+/* knoppen */
+
+section button:first-of-type {
+    padding: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: black;
+    border-radius: 5px;
+    border-color: black;
+    color: white;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    box-shadow: 0 9px #999;
+
+
+}
+
+button:hover {
+    background-color: grey;
+}
+
+button:active {
+    background-color: white;
+    color: black;
+
+    transform: rotate(15deg);
+
+    transform: translateY(4px);
+}
+
+
+/* gele banner onderaan de pagina */
+
+.banner {
+    max-width: 100%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #FDF254;
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+}
+
+.banner > h3 {
+    margin: 0 auto;
+}
+
+.banner > button {
+    margin: 10px auto;
+}
+
+.studentenwerk {
+    background-color: #FDF254;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px;
+    margin: 0;
+}
+
+
+
+/*Einde mobile first*/
+
+
+
+/* wat veranderingen aan het menu bij tabletformaat */
+@media all and (min-width: 800px) {
+    ul {
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .hamburgerMenu {
+        display: none;
+    }
+
+    .slotje {
+        display: none;
+    }
+}
+
+
+/* hieronder is alles te vinden wat er zal veranderen als het scherm groot wordt */
+@media all and (min-width: 800px) {
+    ul {
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        background-color: white;
+    }
+
+    .werk figcaption h2 {
+        text-align: center;
+    }
+
+    .werk figure {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        list-style: none;
+        flex-shrink: 1;
+        width: 400px;
+    }
+
+    .werk {
+        width: 75%;
+        margin: 100px auto;
+    }
+
+
+    /*
+    section article:nth-of-type(1n) {}
+
+    section article img:first-of-type {} */
+
+    section article p:first-of-type {
+        color: black;
+        font-weight: lighter;
+        line-height: 25px;
+    }
+
+    section p:nth-of-type(2) {
+        color: black;
+        width: 600px;
+    }
+
+    section button:first-of-type {
+        padding: 15px;
+        text-align: center;
+        background-color: black;
+        border-radius: 5px;
+        border-color: black;
+        color: white;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        box-shadow: 0 9px #999;
+    }
+
+
+    button:hover {
+        background-color: grey;
+    }
+
+    button:active {
+        background-color: white;
+        color: black;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+
+    /* parallax scrollen met hulp van: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax */
+
+    .parallax {
+        /* de afbeelding */
+        background-image: url("/image/cmd.png");
+        min-height: 600px;
+        /* hier wordt het effect gemaakt */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* de containers met de tekst voor bovenaan */
+
+    .tekstContainer h1:first-child {
+        position: absolute;
+        bottom: 150px;
+        right: 20px;
+        color: black;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+
+    .tekstContainer h1:last-child {
+        position: absolute;
+        bottom: 75px;
+        right: 20px;
+        background-color: rgba(255, 255, 255, .7);
+        color: black;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 3vw;
+        font-weight: lighter;
+    }
+
+    .tekstContainerStudent h1:first-child {
+        position: absolute;
+        bottom: 150px;
+        right: 20px;
+        color: black;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 3vw;
+        font-weight: bolder;
+    }
+
+    .tekstContainerStudent h1:last-child {
+        position: absolute;
+        bottom: 75px;
+        right: 20px;
+        background-color: rgba(255, 255, 255, .7);
+        color: black;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 3vw;
+        font-weight: lighter;
+    }
+
+
+    /*uitlijning van alles op de homepage*/
+
+
+    article {
+        max-width: 1600px;
+        margin: 40px auto 0 auto;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    article > div {
+        padding: 20px;
+        margin-bottom: 20px;
+        flex: 1;
+    }
+
+    .studentenwerk {
+        background-color: #FDF254;
+        display: flex;
+        padding: 50px;
+        margin-left: 0;
+        margin-right: 0;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+
+    }
+
+
+    .banner {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #FDF254;
+        height: 150px;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .banner > h3 {
+        margin: 0 auto;
+    }
+
+    .banner > button {
+        margin: 10px auto;
+    }
+
+}
+
+
+
+/*
+
+section article:nth-of-type(2n) > p {}
+
+section article:nth-of-type(2n) > p:hover {}
