@@ -571,7 +571,7 @@ button:active {
 
     .parallax {
         /* de afbeelding */
-        background-image: url("/image/cmd.png");
+        background-image: url("image/cmd.jpg");
         min-height: 600px;
         /* hier wordt het effect gemaakt */
         background-attachment: fixed;
