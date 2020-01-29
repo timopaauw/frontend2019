@@ -110,6 +110,7 @@ h1 {
 
 .werk figcaption h2 {
     text-align: center;
+    color: black;
 }
 
 h3 {
@@ -329,6 +330,7 @@ section > h2 {
     text-align: center;
     margin: 50px 0;
     font-weight: bolder;
+    color: black;
 }
 
 form {
@@ -509,6 +511,7 @@ button:active {
 
     .werk figcaption h2 {
         text-align: center;
+        color: black;
     }
 
     .werk figure {
